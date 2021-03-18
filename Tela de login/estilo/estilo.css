@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-size: 1em;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    display: flex;
+}
+
+.imagem {
+    background: url(../picture/assets-desafio-codesigners/img.jpg);
+    height: 100%;
+    width: 40%;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 30px 0;
+}
+
+.redes_sociais div {
+    border: 1px solid #888792;
+    border-radius: 100%;
+    margin: 0 6px;
+    padding: 7px;
+    text-align: center;
+}
+
+.redes_sociais div a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 14px;
+}
+
+.container-formulario {
+    text-align: center;
+    height: 80%;
+    width: 70%;
+}
+
+.formulario {
+    width: 40vw;
+    height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario h1 {
+    font-size: 32px;
+    color: red;
+}
+
+.formulario h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    height: 40px;
+    border-radius: 8px;
+    background-color: #F2F6FA;
+    border: 1px solid #ACC9E6;
+    padding-left: 10px;
+    outline: none;
+}
+
+input[type=email] {
+    margin: 18px 0;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    border: 1px solid red;
+}
+
+#termos {
+    margin: 34px 0;
+    align-items: flex-start;
+    text-align: left;
+}
+
+#termos input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+#termos input {
+    display: none;
+}
+
+#termos input+label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: inline-block;
+    /*sem isso ele não aparece*/
+    background-color: #fff;
+    border: 1px solid;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+
+/* EXPLICAÇÃO
+quando o input tiver checkado 
+eu quero que o before da label faça o seguinte*/
+
+#termos input:checked+label::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' version='1.1' width='21px' height='21px' x='0' y='0' viewBox='0 0 174.239 174.239' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''%3E%3Cg%3E%3Cpath xmlns='http://www.w3.org/2000/svg' d='M74.439,157.519c-1.59,1.848-4.34,1.989-6.111,0.313L1.38,94.468c-1.771-1.676-1.848-4.496-0.173-6.267l21.33-22.539 c1.676-1.771,4.496-1.848,6.267-0.173l36.571,34.611c1.771,1.676,4.521,1.535,6.111-0.313l71.447-83.015 c1.59-1.848,4.404-2.059,6.251-0.468l23.518,20.242c1.848,1.59,2.059,4.404,0.468,6.252L74.439,157.519z' fill='%23ffffff' data-original='%23000000' style=''/%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    background-color: red;
+    padding: 1px;
+    border: none;
+}
+
+#termos label a {
+    text-decoration: none;
+    color: red;
+}
+
+input[type=button] {
+    width: 185px;
+    height: 55px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type=button]:first-child {
+    background-color: red;
+    color: white;
+}
+
+input[type=button]:last-child {
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
