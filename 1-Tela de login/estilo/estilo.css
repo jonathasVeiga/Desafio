@@ -22,6 +22,23 @@ body {
     display: flex;
 }
 
+h1::after {
+    /*contente e display são vitais, sem eles. não funciona*/
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: red;
+    margin: 5px auto;
+}
+
+
+/*funcionalidade besta*/
+
+.container-formulario:hover h1::after {
+    background-color: yellow;
+}
+
 .imagem {
     background: url(../picture/assets-desafio-codesigners/img.jpg);
     height: 100%;
